@@ -14,6 +14,9 @@ public class Main {
 
         powerManager.switchProfile(new BatterySaverProfile());
         printRuntime(powerManager);
+
+        powerManager.switchProfile(new UltraSaverProfile());
+        printRuntime(powerManager);
     }
 
     private static void printRuntime(PowerManager powerManager) {
